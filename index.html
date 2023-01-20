@@ -36,7 +36,7 @@
     <title>Free QR Codes</title>
 </head>
 <body class="bg-success">
-    <nav class="mb-3 p-3 text-warning text-center">
+    <nav class="mb-3 p-3 text-success container-fluid bg-light">
         <h1>Free-QR.codes</h1>
     </nav>
     <!--@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@-->
@@ -64,10 +64,10 @@
             <div class="row justify-content-center mb-3">
                 <p class="text-center">Customise your colours:</p>
                 <div class="col-3">
-                    <input id="color1" type="color" class="form-control" value="#000000">
+                    <input role="button" id="color1" type="color" class="form-control" value="#198754">
                 </div>
                 <div class="col-3">
-                    <input id="color2" type="color" class="form-control" value="#FFFFFF">
+                    <input role="button" id="color2" type="color" class="form-control" value="#FFFFFF">
                 </div>
             </div>
             <button id="submitBtn" class="btn btn-success text-light mx-auto" type="submit">
@@ -81,7 +81,7 @@
     <!--@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@-->
     <!--QR Code Output Display-->
     <div class="container card my-3 p-3 justify-content-center">
-        <h1 class="text-center">Your Generated Qr Code:</h1>
+        <h1 class="text-center">Your QR Code:</h1>
         <div class="mx-auto my-3" id="qrcode"></div>
         <button id="downloadbtn" class="btn btn-primary btn-lg mx-auto" style="display: none;"></button>
     </div>
