@@ -15,6 +15,15 @@
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
     <link rel="manifest" href="img/favicon/manifest.json" />
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-Y2QWZ2KJWQ"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-Y2QWZ2KJWQ');
+    </script>
     <title>Free QR Codes</title>
 </head>
 <body class="bg-success">
@@ -29,16 +38,30 @@
     </div>
     <!--QR Code Input Form-->
     <div class="container card p-3">
-        <form id="qrCodeForm" class="">
-            <input id="urlInput" type="url" placeholder="Enter your desired URL" class="form-control" required/>
-            <select class="form-select my-3" name="size" id="size">
-                <option value="100">100x100</option>
-                <option value="200">200x200</option>
-                <option value="300">300x300</option>
-                <option value="400">400x400</option>
-                <option value="500">500x500</option>
-            </select>
-            <button id="" class="btn btn-success text-light mx-auto" type="submit">
+        <form id="qrCodeForm">
+            <div class="input-group mb-3">
+                <input id="urlInput" type="url" placeholder="Enter your desired URL" class="form-control" required/>
+            </div>
+            <div class="input-group mb-3">
+                <label class="input-group-text" for="inputGroupSelect01">Size <span class="small">(px)</span>:</label>
+                <select class="form-select" name="size" id="size">
+                    <option value="100">100x100</option>
+                    <option value="200">200x200</option>
+                    <option value="300">300x300</option>
+                    <option value="400">400x400</option>
+                    <option value="500">500x500</option>
+                </select>
+            </div>
+            <div class="row justify-content-center mb-3">
+                <p class="text-center">Customise your colours:</p>
+                <div class="col-3">
+                    <input id="color1" type="color" class="form-control" value="#000000">
+                </div>
+                <div class="col-3">
+                    <input id="color2" type="color" class="form-control" value="#FFFFFF">
+                </div>
+            </div>
+            <button id="submitBtn" class="btn btn-success text-light mx-auto" type="submit">
                 <span style="display: none;" id="spinner" class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
                 <span id="letsGenerate" style="display:block;">Lets Generate</span>
             </button>
@@ -51,7 +74,7 @@
     <div class="container card my-3 p-3 justify-content-center">
         <h1 class="text-center">Your Generated Qr Code:</h1>
         <div class="mx-auto my-3" id="qrcode"></div>
-        <button id="downloadbtn" class="btn btn-primary btn-lg mx-auto" style="display: none;">Download Now</button>
+        <button id="downloadbtn" class="btn btn-primary btn-lg mx-auto" style="display: none;"></button>
     </div>
     <!--@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@-->
     <!--             Input Advert Here              -->
