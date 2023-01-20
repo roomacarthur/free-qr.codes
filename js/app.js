@@ -57,7 +57,11 @@ function generateQrCode(url,size,color1,color2){
 };
 // Clear QR before making a new one. --- WORKS
 function clearQR(){
-    qrcode.innerHTML = ''
+    qrcode.innerHTML = '';
+    const btn = document.getElementById('downloadLink');
+    if (btn){
+        btn.remove()
+    }
 }
 //
 // Display loading spinner. --- WORKS
