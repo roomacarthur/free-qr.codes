@@ -12,3 +12,6 @@
 #submitBtn{
     margin: 0 auto !important;
 }
+#qrcode > img{
+    max-width: 100% !important;
+}
