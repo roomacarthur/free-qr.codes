@@ -48,10 +48,10 @@
     </script>
     <title>Free QR Code Generator</title>
 </head>
-<body class="bg-success">
+<body class="bg-light">
     <div id="pageBody" class="container-flex mb-3">
-        <nav class="mb-3 p-3 text-success container-fluid bg-light">
-            <h1>Free-QR.codes</h1>
+        <nav class="mb-3 text-success container-fluid bg-light shadow">
+            <a href="#" class="nav-link text-success"><h1>Free-QR.codes</h1></a>
         </nav>
         <!--@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@-->
         <!--                                            -->
@@ -60,7 +60,7 @@
             <h1 class="text-center text-light">The FREE Online QR Code Generator</h1>
         </div>
         <!--QR Code Input Form-->
-        <div class="container card p-3">
+        <div class="container card p-4 shadow border-0">
             <form id="qrCodeForm">
                 <div class="input-group mb-3">
                     <input id="urlInput" type="url" placeholder="Enter your desired URL" class="form-control" required/>
@@ -79,16 +79,16 @@
                     <p class="text-center">Customise your colours:</p>
                     <div class="input-group justify-content-center pb-3">
                         <label class="input-group-text">Colour 1:</label>
-                        <input class="form-control form-control-color" role="button" id="color1" type="color" class="form-control" value="#198754">
+                        <input class="form-control form-control-color" role="button" id="color1" type="color" class="form-control" value="#000000">
                     </div>
                     <div class="input-group justify-content-center pb-3">
                         <label class="input-group-text">Colour 2:</label>
                         <input class="form-control form-control-color" role="button" id="color2" type="color" class="form-control" value="#FFFFFF">
                     </div>
-                    <div class="input-group">
-                        <button id="submitBtn" class="btn btn-lg btn-success text-light" type="submit">
+                    <div class="input-group mt-1">
+                        <button id="submitBtn" class="btn btn-lg text-light btn-primary" type="submit">
                             <span style="display: none;" id="spinner" class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
-                            <span id="letsGenerate" style="display:block;">Lets Generate</span>
+                            <span id="letsGenerate" style="display:block;">Generate</span>
                         </button>
                     </div>
                 </div>
@@ -98,14 +98,14 @@
         <!--                                            -->
         <!--@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@-->
         <!--QR Code Output Display-->
-        <div class="container card my-3 p-3 justify-content-center">
+        <div class="container card border-0 mt-4 p-3 justify-content-center shadow">
             <h1 class="text-center text-success">Your QR Code:</h1>
             <div class="mx-auto my-3 mw-90" id="qrcode"></div>
             <button id="downloadbtn" class="btn btn-primary btn-lg mx-auto" style="display: none;"></button>
         </div>
     </div>
     <!-- Footer -->
-    <div class="container-flex mt-4 footer">
+    <div class="container-flex mt-4 footer shadow">
         <footer class="navbar d-flex flex-wrap justify-content-between align-items-center-3 mt-3 bg-light">
             <div class="col-md-6 d-flex align-items-center m-3">
                 <span class="text-success small">QR Code is a registered trademark of DENSO WAVE INCORPORATED in the United States and other countries.</span>

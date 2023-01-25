@@ -37,7 +37,7 @@ function qrCodeSubmit(e){
 // Download Generated QR Code.
 function downloadNow(qrUrl){
     const link = document.createElement('a');
-    link.classList = 'link-light'
+    link.classList = 'link-light nav-link'
     link.id = 'downloadLink'
     link.href = qrUrl
     link.innerHTML = 'Download Now'

@@ -12,7 +12,7 @@
 #submitBtn{
     margin: 0 auto !important;
 }
-#qrcode > img{
+#qrcode img{
     max-width: 100% !important;
     width: 90% !important;
     margin: 0 auto !important;
